@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA2923D81B5DD8BF00D576EB /* pickyBackUpImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2923D71B5DD8BF00D576EB /* pickyBackUpImage.png */; };
+		BA2923DA1B5DD9A900D576EB /* blackClearGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2923D91B5DD9A900D576EB /* blackClearGradient.png */; };
+		BA2E0AE81B61C7C000DF08F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2E0AE61B61C7C000DF08F9 /* Main.storyboard */; };
+		BA2E0AE91B61C7C900DF08F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD5E5661B4AECBD001B4E4F /* LaunchScreen.xib */; };
+		BA3571C41B5825260014D5BD /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3571C31B5825260014D5BD /* LocationViewController.m */; };
+		BAA2E3D71B5D9408007B3D07 /* current_location.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA2E3D41B5D9408007B3D07 /* current_location.png */; };
+		BAA2E3D81B5D9408007B3D07 /* map_list.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA2E3D51B5D9408007B3D07 /* map_list.png */; };
+		BAA2E3D91B5D9408007B3D07 /* map_map.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA2E3D61B5D9408007B3D07 /* map_map.png */; };
+		BAA2E3DB1B5D9517007B3D07 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA2E3DA1B5D9517007B3D07 /* plus.png */; };
+		BAA2E3DD1B5D9599007B3D07 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA2E3DC1B5D9599007B3D07 /* edit.png */; };
+		BAA2E3DF1B5D9A99007B3D07 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA2E3DE1B5D9A99007B3D07 /* check.png */; };
+		BAABFE3D1B63F666006F703D /* pickie.png in Resources */ = {isa = PBXBuildFile; fileRef = BAABFE3C1B63F666006F703D /* pickie.png */; };
+		BAB28C6D1B618DB600F6EDF5 /* FindOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB28C6B1B618DB600F6EDF5 /* FindOneViewController.m */; };
+		BAB28C701B618E0D00F6EDF5 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB28C6F1B618E0D00F6EDF5 /* FavoritesViewController.m */; };
+		BAB28C7F1B61BE4800F6EDF5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB28C7C1B61BE4800F6EDF5 /* Bolts.framework */; };
+		BAB28C801B61BE4800F6EDF5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB28C7D1B61BE4800F6EDF5 /* Parse.framework */; };
+		BAB28C831B61C03E00F6EDF5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB28C7D1B61BE4800F6EDF5 /* Parse.framework */; };
+		BAB90D5B1B56D05700A15014 /* pickyBurger.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB90D5A1B56D05700A15014 /* pickyBurger.png */; };
+		BAB90D5E1B57066300A15014 /* CellLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB90D5D1B57066300A15014 /* CellLocationView.m */; };
+		BACE14EF1B4F1337005AD7C8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACE14EE1B4F1337005AD7C8 /* Social.framework */; };
+		BACE14F11B4F133C005AD7C8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACE14F01B4F133C005AD7C8 /* Accounts.framework */; };
+		BACE14F41B4F2095005AD7C8 /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BACE14F31B4F2095005AD7C8 /* MapPoint.m */; };
+		BAD3F2EA1B4C3EC400CA94C9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD3F2E91B4C3EC400CA94C9 /* AudioToolbox.framework */; };
+		BAD3F2EC1B4C3EC900CA94C9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD3F2EB1B4C3EC900CA94C9 /* CFNetwork.framework */; };
+		BAD3F2EE1B4C3ECD00CA94C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD3F2ED1B4C3ECD00CA94C9 /* CoreGraphics.framework */; };
+		BAD3F2F01B4C3EDD00CA94C9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD3F2EF1B4C3EDD00CA94C9 /* MobileCoreServices.framework */; };
+		BAD3F2F21B4C3EE100CA94C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD3F2F11B4C3EE100CA94C9 /* QuartzCore.framework */; };
+		BAD3F2F41B4C3EE500CA94C9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD3F2F31B4C3EE500CA94C9 /* Security.framework */; };
+		BAD3F2F61B4C3EEB00CA94C9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD3F2F51B4C3EEB00CA94C9 /* StoreKit.framework */; };
+		BAD3F2F81B4C3EF300CA94C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD3F2F71B4C3EF300CA94C9 /* SystemConfiguration.framework */; };
+		BAD3F2FA1B4C3EFE00CA94C9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD3F2F91B4C3EFE00CA94C9 /* libz.dylib */; };
+		BAD3F2FC1B4C3F0700CA94C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD3F2FB1B4C3F0700CA94C9 /* libsqlite3.dylib */; };
+		BAD3F3031B4C460700CA94C9 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD3F3021B4C460700CA94C9 /* WelcomeViewController.m */; };
+		BAD3F3041B4C460700CA94C9 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD3F3021B4C460700CA94C9 /* WelcomeViewController.m */; };
+		BAD3F30B1B4DC1FC00CA94C9 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD3F30A1B4DC1FC00CA94C9 /* SearchViewController.m */; };
+		BAD5E5571B4AECBD001B4E4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD5E5561B4AECBD001B4E4F /* main.m */; };
+		BAD5E55A1B4AECBD001B4E4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD5E5591B4AECBD001B4E4F /* AppDelegate.m */; };
+		BAD5E55D1B4AECBD001B4E4F /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD5E55C1B4AECBD001B4E4F /* FindViewController.m */; };
+		BAD5E5651B4AECBD001B4E4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD5E5641B4AECBD001B4E4F /* Images.xcassets */; };
+		BAD5E5741B4AECBD001B4E4F /* FaveRestaurantsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD5E5731B4AECBD001B4E4F /* FaveRestaurantsTests.m */; };
+		BAD5E57E1B4AEF27001B4E4F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD5E57D1B4AEF27001B4E4F /* MapKit.framework */; };
+		BAD5E5801B4AEF2D001B4E4F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD5E57F1B4AEF2D001B4E4F /* CoreLocation.framework */; };
+		BAFAF4871B51CD6000ED47FE /* picky.png in Resources */ = {isa = PBXBuildFile; fileRef = BAFAF4861B51CD6000ED47FE /* picky.png */; };
+		BAFAF4891B51D42B00ED47FE /* pickyTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = BAFAF4881B51D42B00ED47FE /* pickyTabBar.png */; };
+		BAFAF48B1B51D46700ED47FE /* mapTab.png in Resources */ = {isa = PBXBuildFile; fileRef = BAFAF48A1B51D46700ED47FE /* mapTab.png */; };
+		BAFAF48D1B51D79F00ED47FE /* pickyMapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BAFAF48C1B51D79F00ED47FE /* pickyMapIcon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAD5E56E1B4AECBD001B4E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAD5E5491B4AECBD001B4E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAD5E5501B4AECBD001B4E4F;
+			remoteInfo = FaveRestaurants;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAD5E58A1B4B18E8001B4E4F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BA2923D71B5DD8BF00D576EB /* pickyBackUpImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickyBackUpImage.png; sourceTree = "<group>"; };
+		BA2923D91B5DD9A900D576EB /* blackClearGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackClearGradient.png; sourceTree = "<group>"; };
+		BA2E0AE71B61C7C000DF08F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FaveRestaurants/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA3571C21B5825260014D5BD /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		BA3571C31B5825260014D5BD /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		BAA2E3D41B5D9408007B3D07 /* current_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = current_location.png; path = ../Objects/current_location.png; sourceTree = "<group>"; };
+		BAA2E3D51B5D9408007B3D07 /* map_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_list.png; path = ../Objects/map_list.png; sourceTree = "<group>"; };
+		BAA2E3D61B5D9408007B3D07 /* map_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_map.png; path = ../Objects/map_map.png; sourceTree = "<group>"; };
+		BAA2E3DA1B5D9517007B3D07 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		BAA2E3DC1B5D9599007B3D07 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		BAA2E3DE1B5D9A99007B3D07 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		BAABFE3C1B63F666006F703D /* pickie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickie.png; sourceTree = "<group>"; };
+		BAB28C6A1B618DB600F6EDF5 /* FindOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindOneViewController.h; sourceTree = "<group>"; };
+		BAB28C6B1B618DB600F6EDF5 /* FindOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindOneViewController.m; sourceTree = "<group>"; };
+		BAB28C6E1B618E0D00F6EDF5 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		BAB28C6F1B618E0D00F6EDF5 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		BAB28C7C1B61BE4800F6EDF5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		BAB28C7D1B61BE4800F6EDF5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		BAB28C7E1B61BE4800F6EDF5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		BAB90D5A1B56D05700A15014 /* pickyBurger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pickyBurger.png; path = ../pickyBurger.png; sourceTree = "<group>"; };
+		BAB90D5C1B57066300A15014 /* CellLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellLocationView.h; path = ../CellLocationView.h; sourceTree = "<group>"; };
+		BAB90D5D1B57066300A15014 /* CellLocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellLocationView.m; path = ../CellLocationView.m; sourceTree = "<group>"; };
+		BACE14EE1B4F1337005AD7C8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		BACE14F01B4F133C005AD7C8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		BACE14F21B4F2095005AD7C8 /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapPoint.h; path = ../MapPoint.h; sourceTree = "<group>"; };
+		BACE14F31B4F2095005AD7C8 /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapPoint.m; path = ../MapPoint.m; sourceTree = "<group>"; };
+		BAD3F2E91B4C3EC400CA94C9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BAD3F2EB1B4C3EC900CA94C9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BAD3F2ED1B4C3ECD00CA94C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BAD3F2EF1B4C3EDD00CA94C9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BAD3F2F11B4C3EE100CA94C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BAD3F2F31B4C3EE500CA94C9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BAD3F2F51B4C3EEB00CA94C9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BAD3F2F71B4C3EF300CA94C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BAD3F2F91B4C3EFE00CA94C9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		BAD3F2FB1B4C3F0700CA94C9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		BAD3F3011B4C460700CA94C9 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		BAD3F3021B4C460700CA94C9 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		BAD3F3091B4DC1FC00CA94C9 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		BAD3F30A1B4DC1FC00CA94C9 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		BAD5E5511B4AECBD001B4E4F /* Pickie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD5E5551B4AECBD001B4E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD5E5561B4AECBD001B4E4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAD5E5581B4AECBD001B4E4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAD5E5591B4AECBD001B4E4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAD5E55B1B4AECBD001B4E4F /* FindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindViewController.h; sourceTree = "<group>"; };
+		BAD5E55C1B4AECBD001B4E4F /* FindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindViewController.m; sourceTree = "<group>"; };
+		BAD5E5621B4AECBD001B4E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAD5E5641B4AECBD001B4E4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BAD5E5671B4AECBD001B4E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BAD5E56D1B4AECBD001B4E4F /* PickieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD5E5721B4AECBD001B4E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD5E5731B4AECBD001B4E4F /* FaveRestaurantsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaveRestaurantsTests.m; sourceTree = "<group>"; };
+		BAD5E57D1B4AEF27001B4E4F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BAD5E57F1B4AEF2D001B4E4F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BAFAF4861B51CD6000ED47FE /* picky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picky.png; path = ../picky.png; sourceTree = "<group>"; };
+		BAFAF4881B51D42B00ED47FE /* pickyTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pickyTabBar.png; path = ../pickyTabBar.png; sourceTree = "<group>"; };
+		BAFAF48A1B51D46700ED47FE /* mapTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapTab.png; path = ../mapTab.png; sourceTree = "<group>"; };
+		BAFAF48C1B51D79F00ED47FE /* pickyMapIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pickyMapIcon.png; path = ../pickyMapIcon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAD5E54E1B4AECBD001B4E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACE14F11B4F133C005AD7C8 /* Accounts.framework in Frameworks */,
+				BACE14EF1B4F1337005AD7C8 /* Social.framework in Frameworks */,
+				BAD3F2FC1B4C3F0700CA94C9 /* libsqlite3.dylib in Frameworks */,
+				BAD3F2FA1B4C3EFE00CA94C9 /* libz.dylib in Frameworks */,
+				BAD3F2F81B4C3EF300CA94C9 /* SystemConfiguration.framework in Frameworks */,
+				BAD3F2F61B4C3EEB00CA94C9 /* StoreKit.framework in Frameworks */,
+				BAD3F2F41B4C3EE500CA94C9 /* Security.framework in Frameworks */,
+				BAD3F2F21B4C3EE100CA94C9 /* QuartzCore.framework in Frameworks */,
+				BAD3F2F01B4C3EDD00CA94C9 /* MobileCoreServices.framework in Frameworks */,
+				BAD3F2EE1B4C3ECD00CA94C9 /* CoreGraphics.framework in Frameworks */,
+				BAB28C801B61BE4800F6EDF5 /* Parse.framework in Frameworks */,
+				BAD3F2EC1B4C3EC900CA94C9 /* CFNetwork.framework in Frameworks */,
+				BAD3F2EA1B4C3EC400CA94C9 /* AudioToolbox.framework in Frameworks */,
+				BAB28C7F1B61BE4800F6EDF5 /* Bolts.framework in Frameworks */,
+				BAD5E5801B4AEF2D001B4E4F /* CoreLocation.framework in Frameworks */,
+				BAD5E57E1B4AEF27001B4E4F /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD5E56A1B4AECBD001B4E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB28C831B61C03E00F6EDF5 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA4B08691B589BC200C2821A /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				BACE14F21B4F2095005AD7C8 /* MapPoint.h */,
+				BACE14F31B4F2095005AD7C8 /* MapPoint.m */,
+				BAB90D5D1B57066300A15014 /* CellLocationView.m */,
+				BAB90D5C1B57066300A15014 /* CellLocationView.h */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		BA4B086A1B589BF100C2821A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BAA2E3D51B5D9408007B3D07 /* map_list.png */,
+				BAFAF48C1B51D79F00ED47FE /* pickyMapIcon.png */,
+				BAA2E3D41B5D9408007B3D07 /* current_location.png */,
+				BAA2E3DA1B5D9517007B3D07 /* plus.png */,
+				BAA2E3DC1B5D9599007B3D07 /* edit.png */,
+				BAA2E3DE1B5D9A99007B3D07 /* check.png */,
+				BAABFE3C1B63F666006F703D /* pickie.png */,
+				BAFAF48A1B51D46700ED47FE /* mapTab.png */,
+				BAA2E3D61B5D9408007B3D07 /* map_map.png */,
+				BA2923D91B5DD9A900D576EB /* blackClearGradient.png */,
+				BA2923D71B5DD8BF00D576EB /* pickyBackUpImage.png */,
+				BAFAF4881B51D42B00ED47FE /* pickyTabBar.png */,
+				BAB90D5A1B56D05700A15014 /* pickyBurger.png */,
+				BAFAF4861B51CD6000ED47FE /* picky.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		BAB28C7B1B61BE4800F6EDF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAD3F2F71B4C3EF300CA94C9 /* SystemConfiguration.framework */,
+				BAD3F2F51B4C3EEB00CA94C9 /* StoreKit.framework */,
+				BAD3F2F31B4C3EE500CA94C9 /* Security.framework */,
+				BAD3F2F11B4C3EE100CA94C9 /* QuartzCore.framework */,
+				BAD3F2EF1B4C3EDD00CA94C9 /* MobileCoreServices.framework */,
+				BAD3F2ED1B4C3ECD00CA94C9 /* CoreGraphics.framework */,
+				BAD3F2EB1B4C3EC900CA94C9 /* CFNetwork.framework */,
+				BAD3F2E91B4C3EC400CA94C9 /* AudioToolbox.framework */,
+				BACE14EE1B4F1337005AD7C8 /* Social.framework */,
+				BACE14F01B4F133C005AD7C8 /* Accounts.framework */,
+				BAD5E57F1B4AEF2D001B4E4F /* CoreLocation.framework */,
+				BAD5E57D1B4AEF27001B4E4F /* MapKit.framework */,
+				BAB28C7C1B61BE4800F6EDF5 /* Bolts.framework */,
+				BAB28C7D1B61BE4800F6EDF5 /* Parse.framework */,
+				BAB28C7E1B61BE4800F6EDF5 /* Realm.framework */,
+			);
+			name = Frameworks;
+			path = ../Frameworks;
+			sourceTree = "<group>";
+		};
+		BAD5E5481B4AECBD001B4E4F = {
+			isa = PBXGroup;
+			children = (
+				BA2E0AE61B61C7C000DF08F9 /* Main.storyboard */,
+				BAD3F2FB1B4C3F0700CA94C9 /* libsqlite3.dylib */,
+				BAD3F2F91B4C3EFE00CA94C9 /* libz.dylib */,
+				BAD5E5531B4AECBD001B4E4F /* FaveRestaurants */,
+				BAD5E5701B4AECBD001B4E4F /* FaveRestaurantsTests */,
+				BAD5E5521B4AECBD001B4E4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAD5E5521B4AECBD001B4E4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5E5511B4AECBD001B4E4F /* Pickie.app */,
+				BAD5E56D1B4AECBD001B4E4F /* PickieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAD5E5531B4AECBD001B4E4F /* FaveRestaurants */ = {
+			isa = PBXGroup;
+			children = (
+				BAB28C7B1B61BE4800F6EDF5 /* Frameworks */,
+				BA4B086A1B589BF100C2821A /* Images */,
+				BA4B08691B589BC200C2821A /* Objects */,
+				BAD5E5581B4AECBD001B4E4F /* AppDelegate.h */,
+				BAD5E5591B4AECBD001B4E4F /* AppDelegate.m */,
+				BAD3F3011B4C460700CA94C9 /* WelcomeViewController.h */,
+				BAD3F3021B4C460700CA94C9 /* WelcomeViewController.m */,
+				BAB28C6E1B618E0D00F6EDF5 /* FavoritesViewController.h */,
+				BAB28C6F1B618E0D00F6EDF5 /* FavoritesViewController.m */,
+				BAD3F3091B4DC1FC00CA94C9 /* SearchViewController.h */,
+				BAD3F30A1B4DC1FC00CA94C9 /* SearchViewController.m */,
+				BAB28C6A1B618DB600F6EDF5 /* FindOneViewController.h */,
+				BAB28C6B1B618DB600F6EDF5 /* FindOneViewController.m */,
+				BAD5E55B1B4AECBD001B4E4F /* FindViewController.h */,
+				BAD5E55C1B4AECBD001B4E4F /* FindViewController.m */,
+				BA3571C21B5825260014D5BD /* LocationViewController.h */,
+				BAD5E5611B4AECBD001B4E4F /* Main.storyboard */,
+				BA3571C31B5825260014D5BD /* LocationViewController.m */,
+				BAD5E5641B4AECBD001B4E4F /* Images.xcassets */,
+				BAD5E5661B4AECBD001B4E4F /* LaunchScreen.xib */,
+				BAD5E5541B4AECBD001B4E4F /* Supporting Files */,
+			);
+			path = FaveRestaurants;
+			sourceTree = "<group>";
+		};
+		BAD5E5541B4AECBD001B4E4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5E5551B4AECBD001B4E4F /* Info.plist */,
+				BAD5E5561B4AECBD001B4E4F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAD5E5701B4AECBD001B4E4F /* FaveRestaurantsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5E5731B4AECBD001B4E4F /* FaveRestaurantsTests.m */,
+				BAD5E5711B4AECBD001B4E4F /* Supporting Files */,
+			);
+			path = FaveRestaurantsTests;
+			sourceTree = "<group>";
+		};
+		BAD5E5711B4AECBD001B4E4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5E5721B4AECBD001B4E4F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAD5E5501B4AECBD001B4E4F /* Pickie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD5E5771B4AECBD001B4E4F /* Build configuration list for PBXNativeTarget "Pickie" */;
+			buildPhases = (
+				BAD5E54D1B4AECBD001B4E4F /* Sources */,
+				BAD5E54F1B4AECBD001B4E4F /* Resources */,
+				BAD5E54E1B4AECBD001B4E4F /* Frameworks */,
+				BAD5E58A1B4B18E8001B4E4F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pickie;
+			productName = FaveRestaurants;
+			productReference = BAD5E5511B4AECBD001B4E4F /* Pickie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAD5E56C1B4AECBD001B4E4F /* PickieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD5E57A1B4AECBD001B4E4F /* Build configuration list for PBXNativeTarget "PickieTests" */;
+			buildPhases = (
+				BAD5E5691B4AECBD001B4E4F /* Sources */,
+				BAD5E56A1B4AECBD001B4E4F /* Frameworks */,
+				BAD5E56B1B4AECBD001B4E4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAD5E56F1B4AECBD001B4E4F /* PBXTargetDependency */,
+			);
+			name = PickieTests;
+			productName = FaveRestaurantsTests;
+			productReference = BAD5E56D1B4AECBD001B4E4F /* PickieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAD5E5491B4AECBD001B4E4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = King_B;
+				TargetAttributes = {
+					BAD5E5501B4AECBD001B4E4F = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = QV5DCZA4G6;
+					};
+					BAD5E56C1B4AECBD001B4E4F = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = BAD5E5501B4AECBD001B4E4F;
+					};
+				};
+			};
+			buildConfigurationList = BAD5E54C1B4AECBD001B4E4F /* Build configuration list for PBXProject "Pickie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAD5E5481B4AECBD001B4E4F;
+			productRefGroup = BAD5E5521B4AECBD001B4E4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAD5E5501B4AECBD001B4E4F /* Pickie */,
+				BAD5E56C1B4AECBD001B4E4F /* PickieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAD5E54F1B4AECBD001B4E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA2E0AE91B61C7C900DF08F9 /* LaunchScreen.xib in Resources */,
+				BA2E0AE81B61C7C000DF08F9 /* Main.storyboard in Resources */,
+				BAABFE3D1B63F666006F703D /* pickie.png in Resources */,
+				BAA2E3D81B5D9408007B3D07 /* map_list.png in Resources */,
+				BAFAF4891B51D42B00ED47FE /* pickyTabBar.png in Resources */,
+				BAA2E3DF1B5D9A99007B3D07 /* check.png in Resources */,
+				BAB90D5B1B56D05700A15014 /* pickyBurger.png in Resources */,
+				BAA2E3DD1B5D9599007B3D07 /* edit.png in Resources */,
+				BAA2E3D91B5D9408007B3D07 /* map_map.png in Resources */,
+				BAFAF48D1B51D79F00ED47FE /* pickyMapIcon.png in Resources */,
+				BAFAF4871B51CD6000ED47FE /* picky.png in Resources */,
+				BAFAF48B1B51D46700ED47FE /* mapTab.png in Resources */,
+				BA2923D81B5DD8BF00D576EB /* pickyBackUpImage.png in Resources */,
+				BA2923DA1B5DD9A900D576EB /* blackClearGradient.png in Resources */,
+				BAA2E3D71B5D9408007B3D07 /* current_location.png in Resources */,
+				BAD5E5651B4AECBD001B4E4F /* Images.xcassets in Resources */,
+				BAA2E3DB1B5D9517007B3D07 /* plus.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD5E56B1B4AECBD001B4E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAD5E54D1B4AECBD001B4E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAB28C701B618E0D00F6EDF5 /* FavoritesViewController.m in Sources */,
+				BAD3F30B1B4DC1FC00CA94C9 /* SearchViewController.m in Sources */,
+				BAD3F3031B4C460700CA94C9 /* WelcomeViewController.m in Sources */,
+				BAD5E55A1B4AECBD001B4E4F /* AppDelegate.m in Sources */,
+				BAB90D5E1B57066300A15014 /* CellLocationView.m in Sources */,
+				BA3571C41B5825260014D5BD /* LocationViewController.m in Sources */,
+				BAB28C6D1B618DB600F6EDF5 /* FindOneViewController.m in Sources */,
+				BAD5E55D1B4AECBD001B4E4F /* FindViewController.m in Sources */,
+				BACE14F41B4F2095005AD7C8 /* MapPoint.m in Sources */,
+				BAD5E5571B4AECBD001B4E4F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD5E5691B4AECBD001B4E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD3F3041B4C460700CA94C9 /* WelcomeViewController.m in Sources */,
+				BAD5E5741B4AECBD001B4E4F /* FaveRestaurantsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAD5E56F1B4AECBD001B4E4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAD5E5501B4AECBD001B4E4F /* Pickie */;
+			targetProxy = BAD5E56E1B4AECBD001B4E4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA2E0AE61B61C7C000DF08F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA2E0AE71B61C7C000DF08F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAD5E5611B4AECBD001B4E4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAD5E5621B4AECBD001B4E4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAD5E5661B4AECBD001B4E4F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAD5E5671B4AECBD001B4E4F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAD5E5751B4AECBD001B4E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BAD5E5761B4AECBD001B4E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/HENRY/Desktop/Projects/realm-objc-0.93.2/ios/dynamic";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAD5E5781B4AECBD001B4E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = /Users/HENRY/Desktop/Projects/Picky/Frameworks;
+				INFOPLIST_FILE = FaveRestaurants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.King-B.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Pickie;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BAD5E5791B4AECBD001B4E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = /Users/HENRY/Desktop/Projects/Picky/Frameworks;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/HENRY/Desktop/Projects/Picky/Frameworks;
+				INFOPLIST_FILE = FaveRestaurants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.King-B.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = Pickie;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BAD5E57B1B4AECBD001B4E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FaveRestaurantsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.King-B.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = PickieTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pickie.app/Pickie";
+			};
+			name = Debug;
+		};
+		BAD5E57C1B4AECBD001B4E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = FaveRestaurantsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.King-B.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = PickieTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pickie.app/Pickie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAD5E54C1B4AECBD001B4E4F /* Build configuration list for PBXProject "Pickie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD5E5751B4AECBD001B4E4F /* Debug */,
+				BAD5E5761B4AECBD001B4E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD5E5771B4AECBD001B4E4F /* Build configuration list for PBXNativeTarget "Pickie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD5E5781B4AECBD001B4E4F /* Debug */,
+				BAD5E5791B4AECBD001B4E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD5E57A1B4AECBD001B4E4F /* Build configuration list for PBXNativeTarget "PickieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD5E57B1B4AECBD001B4E4F /* Debug */,
+				BAD5E57C1B4AECBD001B4E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAD5E5491B4AECBD001B4E4F /* Project object */;
+}

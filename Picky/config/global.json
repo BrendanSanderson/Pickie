@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.5.0"
+  },
+  "applications": {
+    "Picky": {
+      "applicationId": "ipoZD08lDRcgdkEaCtKqIMUSRrpnmYzaWiWOXnAs",
+      "masterKey": "2syx0g6b87ae1T5Rdi0fNUvggzxeyik74mxjT8Qn"
+    },
+    "_default": {
+      "link": "Picky"
+    }
+  }
+}
