@@ -1,11 +1,10 @@
 //
-//  CellLocationView.h
-//  Pickie
+//  UITableCellView+CellLocationView.h
+//  FaveRestaurants
 //
-//  Created by Brendan Sanderson on 7/6/15.
-//  Copyright (c) 2015 Brendan Sanderson. All rights reserved.
+//  Created by Henry Sanderson on 7/15/15.
+//  Copyright (c) 2015 King_B. All rights reserved.
 //
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 

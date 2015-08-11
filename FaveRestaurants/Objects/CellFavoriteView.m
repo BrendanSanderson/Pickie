@@ -1,12 +1,12 @@
 //
-//  UITableCellView+CellLocationView.m
-//  FaveRestaurants
+//  CellFavoriteView.m
+//  Pickie
 //
-//  Created by Henry Sanderson on 7/15/15.
-//  Copyright (c) 2015 King_B. All rights reserved.
+//  Created by Brendan Sanderson on 7/6/15.
+//  Copyright (c) 2015 Brendan Sanderson. All rights reserved.
 //
 
-#import "CellLocationView.h"
+#import "CellFavoriteView.h"
 
-@implementation CellLocationView
+@implementation CellFavoriteView
 @end

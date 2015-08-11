@@ -1,14 +1,14 @@
 //
 //  AppDelegate.m
-//  FaveRestaurants
+//  Pickie
 //
-//  Created by Henry Sanderson on 7/6/15.
-//  Copyright (c) 2015 King_B. All rights reserved.
+//  Created by Brendan Sanderson on 7/6/15.
+//  Copyright (c) 2015 Brendan Sanderson. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
-
+#import <CoreLocation/CoreLocation.h>
 @interface AppDelegate ()
 
 @end
@@ -20,7 +20,6 @@
     // [Optional] Power your app with Local Datastore. For more info, go to
     // https://parse.com/docs/ios_guide#localdatastore/iOS
     [Parse enableLocalDatastore];
-    
     // Initialize Parse.
     [Parse setApplicationId:@"ipoZD08lDRcgdkEaCtKqIMUSRrpnmYzaWiWOXnAs"
                   clientKey:@"LWOCdCDB6lIaYngECj1lUdsT5FwhzHxkXLOUUOU9"];
@@ -36,7 +35,6 @@
     [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
     [[UINavigationBar appearance] setBarTintColor:[[UIColor alloc]initWithRed:37.0/255.0 green:62.0/255.0 blue:102.0/255.0 alpha:1.0]];
     [[UITabBar appearance] setTintColor:[[UIColor alloc]initWithRed:239.0/255.0 green:101.0/255.0 blue:85.0/255.0 alpha:1.0]];
-//    [[UITabBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [[UIColor alloc]initWithRed:239.0/255.0 green:101.0/255.0 blue:85.0/255.0 alpha:1.0]}];]
     [[UITabBar appearance] setBarTintColor:[[UIColor alloc]initWithRed:37.0/255.0 green:62.0/255.0 blue:102.0/255.0 alpha:1.0]];
     
     

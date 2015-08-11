@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0529411B66B74400718FEC /* LocationKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0529401B66B74400718FEC /* LocationKeeper.m */; };
+		BA0529431B66C40900718FEC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0529421B66C40900718FEC /* Parse.framework */; };
 		BA2923D81B5DD8BF00D576EB /* pickyBackUpImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2923D71B5DD8BF00D576EB /* pickyBackUpImage.png */; };
 		BA2923DA1B5DD9A900D576EB /* blackClearGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = BA2923D91B5DD9A900D576EB /* blackClearGradient.png */; };
 		BA2E0AE81B61C7C000DF08F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2E0AE61B61C7C000DF08F9 /* Main.storyboard */; };
 		BA2E0AE91B61C7C900DF08F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD5E5661B4AECBD001B4E4F /* LaunchScreen.xib */; };
 		BA3571C41B5825260014D5BD /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3571C31B5825260014D5BD /* LocationViewController.m */; };
+		BA44DB4C1B6818A40045B7FB /* CellFavoriteView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA44DB4B1B6818A40045B7FB /* CellFavoriteView.m */; };
 		BAA2E3D71B5D9408007B3D07 /* current_location.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA2E3D41B5D9408007B3D07 /* current_location.png */; };
 		BAA2E3D81B5D9408007B3D07 /* map_list.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA2E3D51B5D9408007B3D07 /* map_list.png */; };
 		BAA2E3D91B5D9408007B3D07 /* map_map.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA2E3D61B5D9408007B3D07 /* map_map.png */; };
@@ -22,10 +25,10 @@
 		BAB28C6D1B618DB600F6EDF5 /* FindOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB28C6B1B618DB600F6EDF5 /* FindOneViewController.m */; };
 		BAB28C701B618E0D00F6EDF5 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB28C6F1B618E0D00F6EDF5 /* FavoritesViewController.m */; };
 		BAB28C7F1B61BE4800F6EDF5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB28C7C1B61BE4800F6EDF5 /* Bolts.framework */; };
-		BAB28C801B61BE4800F6EDF5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB28C7D1B61BE4800F6EDF5 /* Parse.framework */; };
-		BAB28C831B61C03E00F6EDF5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB28C7D1B61BE4800F6EDF5 /* Parse.framework */; };
 		BAB90D5B1B56D05700A15014 /* pickyBurger.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB90D5A1B56D05700A15014 /* pickyBurger.png */; };
 		BAB90D5E1B57066300A15014 /* CellLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB90D5D1B57066300A15014 /* CellLocationView.m */; };
+		BAC9F3401B6FE3E0007E1D3C /* LocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC9F33F1B6FE3E0007E1D3C /* LocationTableViewController.m */; };
+		BAC9F3421B6FEDB5007E1D3C /* PickieCover.png in Resources */ = {isa = PBXBuildFile; fileRef = BAC9F3411B6FEDB5007E1D3C /* PickieCover.png */; };
 		BACE14EF1B4F1337005AD7C8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACE14EE1B4F1337005AD7C8 /* Social.framework */; };
 		BACE14F11B4F133C005AD7C8 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACE14F01B4F133C005AD7C8 /* Accounts.framework */; };
 		BACE14F41B4F2095005AD7C8 /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BACE14F31B4F2095005AD7C8 /* MapPoint.m */; };
@@ -79,11 +82,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA05293F1B66B74400718FEC /* LocationKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationKeeper.h; path = ../Images/LocationKeeper.h; sourceTree = "<group>"; };
+		BA0529401B66B74400718FEC /* LocationKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationKeeper.m; path = ../Images/LocationKeeper.m; sourceTree = "<group>"; };
+		BA0529421B66C40900718FEC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BA2923D71B5DD8BF00D576EB /* pickyBackUpImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickyBackUpImage.png; sourceTree = "<group>"; };
 		BA2923D91B5DD9A900D576EB /* blackClearGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackClearGradient.png; sourceTree = "<group>"; };
 		BA2E0AE71B61C7C000DF08F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FaveRestaurants/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA3571C21B5825260014D5BD /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		BA3571C31B5825260014D5BD /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		BA44DB4A1B6818A40045B7FB /* CellFavoriteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellFavoriteView.h; sourceTree = "<group>"; };
+		BA44DB4B1B6818A40045B7FB /* CellFavoriteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellFavoriteView.m; sourceTree = "<group>"; };
 		BAA2E3D41B5D9408007B3D07 /* current_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = current_location.png; path = ../Objects/current_location.png; sourceTree = "<group>"; };
 		BAA2E3D51B5D9408007B3D07 /* map_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_list.png; path = ../Objects/map_list.png; sourceTree = "<group>"; };
 		BAA2E3D61B5D9408007B3D07 /* map_map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_map.png; path = ../Objects/map_map.png; sourceTree = "<group>"; };
@@ -96,11 +104,13 @@
 		BAB28C6E1B618E0D00F6EDF5 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
 		BAB28C6F1B618E0D00F6EDF5 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		BAB28C7C1B61BE4800F6EDF5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		BAB28C7D1B61BE4800F6EDF5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BAB28C7E1B61BE4800F6EDF5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		BAB90D5A1B56D05700A15014 /* pickyBurger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pickyBurger.png; path = ../pickyBurger.png; sourceTree = "<group>"; };
 		BAB90D5C1B57066300A15014 /* CellLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellLocationView.h; path = ../CellLocationView.h; sourceTree = "<group>"; };
 		BAB90D5D1B57066300A15014 /* CellLocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellLocationView.m; path = ../CellLocationView.m; sourceTree = "<group>"; };
+		BAC9F33E1B6FE3E0007E1D3C /* LocationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationTableViewController.h; sourceTree = "<group>"; };
+		BAC9F33F1B6FE3E0007E1D3C /* LocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationTableViewController.m; sourceTree = "<group>"; };
+		BAC9F3411B6FEDB5007E1D3C /* PickieCover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PickieCover.png; sourceTree = "<group>"; };
 		BACE14EE1B4F1337005AD7C8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		BACE14F01B4F133C005AD7C8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		BACE14F21B4F2095005AD7C8 /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapPoint.h; path = ../MapPoint.h; sourceTree = "<group>"; };
@@ -151,11 +161,11 @@
 				BAD3F2FA1B4C3EFE00CA94C9 /* libz.dylib in Frameworks */,
 				BAD3F2F81B4C3EF300CA94C9 /* SystemConfiguration.framework in Frameworks */,
 				BAD3F2F61B4C3EEB00CA94C9 /* StoreKit.framework in Frameworks */,
+				BA0529431B66C40900718FEC /* Parse.framework in Frameworks */,
 				BAD3F2F41B4C3EE500CA94C9 /* Security.framework in Frameworks */,
 				BAD3F2F21B4C3EE100CA94C9 /* QuartzCore.framework in Frameworks */,
 				BAD3F2F01B4C3EDD00CA94C9 /* MobileCoreServices.framework in Frameworks */,
 				BAD3F2EE1B4C3ECD00CA94C9 /* CoreGraphics.framework in Frameworks */,
-				BAB28C801B61BE4800F6EDF5 /* Parse.framework in Frameworks */,
 				BAD3F2EC1B4C3EC900CA94C9 /* CFNetwork.framework in Frameworks */,
 				BAD3F2EA1B4C3EC400CA94C9 /* AudioToolbox.framework in Frameworks */,
 				BAB28C7F1B61BE4800F6EDF5 /* Bolts.framework in Frameworks */,
@@ -168,7 +178,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAB28C831B61C03E00F6EDF5 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,10 +187,14 @@
 		BA4B08691B589BC200C2821A /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				BA05293F1B66B74400718FEC /* LocationKeeper.h */,
+				BA0529401B66B74400718FEC /* LocationKeeper.m */,
 				BACE14F21B4F2095005AD7C8 /* MapPoint.h */,
 				BACE14F31B4F2095005AD7C8 /* MapPoint.m */,
-				BAB90D5D1B57066300A15014 /* CellLocationView.m */,
+				BA44DB4A1B6818A40045B7FB /* CellFavoriteView.h */,
+				BA44DB4B1B6818A40045B7FB /* CellFavoriteView.m */,
 				BAB90D5C1B57066300A15014 /* CellLocationView.h */,
+				BAB90D5D1B57066300A15014 /* CellLocationView.m */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 				BAA2E3DE1B5D9A99007B3D07 /* check.png */,
 				BAABFE3C1B63F666006F703D /* pickie.png */,
 				BAFAF48A1B51D46700ED47FE /* mapTab.png */,
+				BAC9F3411B6FEDB5007E1D3C /* PickieCover.png */,
 				BAA2E3D61B5D9408007B3D07 /* map_map.png */,
 				BA2923D91B5DD9A900D576EB /* blackClearGradient.png */,
 				BA2923D71B5DD8BF00D576EB /* pickyBackUpImage.png */,
@@ -212,6 +226,7 @@
 			children = (
 				BAD3F2F71B4C3EF300CA94C9 /* SystemConfiguration.framework */,
 				BAD3F2F51B4C3EEB00CA94C9 /* StoreKit.framework */,
+				BA0529421B66C40900718FEC /* Parse.framework */,
 				BAD3F2F31B4C3EE500CA94C9 /* Security.framework */,
 				BAD3F2F11B4C3EE100CA94C9 /* QuartzCore.framework */,
 				BAD3F2EF1B4C3EDD00CA94C9 /* MobileCoreServices.framework */,
@@ -223,7 +238,6 @@
 				BAD5E57F1B4AEF2D001B4E4F /* CoreLocation.framework */,
 				BAD5E57D1B4AEF27001B4E4F /* MapKit.framework */,
 				BAB28C7C1B61BE4800F6EDF5 /* Bolts.framework */,
-				BAB28C7D1B61BE4800F6EDF5 /* Parse.framework */,
 				BAB28C7E1B61BE4800F6EDF5 /* Realm.framework */,
 			);
 			name = Frameworks;
@@ -265,13 +279,15 @@
 				BAB28C6F1B618E0D00F6EDF5 /* FavoritesViewController.m */,
 				BAD3F3091B4DC1FC00CA94C9 /* SearchViewController.h */,
 				BAD3F30A1B4DC1FC00CA94C9 /* SearchViewController.m */,
-				BAB28C6A1B618DB600F6EDF5 /* FindOneViewController.h */,
-				BAB28C6B1B618DB600F6EDF5 /* FindOneViewController.m */,
 				BAD5E55B1B4AECBD001B4E4F /* FindViewController.h */,
 				BAD5E55C1B4AECBD001B4E4F /* FindViewController.m */,
+				BAB28C6A1B618DB600F6EDF5 /* FindOneViewController.h */,
+				BAB28C6B1B618DB600F6EDF5 /* FindOneViewController.m */,
 				BA3571C21B5825260014D5BD /* LocationViewController.h */,
-				BAD5E5611B4AECBD001B4E4F /* Main.storyboard */,
 				BA3571C31B5825260014D5BD /* LocationViewController.m */,
+				BAC9F33E1B6FE3E0007E1D3C /* LocationTableViewController.h */,
+				BAC9F33F1B6FE3E0007E1D3C /* LocationTableViewController.m */,
+				BAD5E5611B4AECBD001B4E4F /* Main.storyboard */,
 				BAD5E5641B4AECBD001B4E4F /* Images.xcassets */,
 				BAD5E5661B4AECBD001B4E4F /* LaunchScreen.xib */,
 				BAD5E5541B4AECBD001B4E4F /* Supporting Files */,
@@ -387,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC9F3421B6FEDB5007E1D3C /* PickieCover.png in Resources */,
 				BA2E0AE91B61C7C900DF08F9 /* LaunchScreen.xib in Resources */,
 				BA2E0AE81B61C7C000DF08F9 /* Main.storyboard in Resources */,
 				BAABFE3D1B63F666006F703D /* pickie.png in Resources */,
@@ -421,9 +438,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA44DB4C1B6818A40045B7FB /* CellFavoriteView.m in Sources */,
 				BAB28C701B618E0D00F6EDF5 /* FavoritesViewController.m in Sources */,
 				BAD3F30B1B4DC1FC00CA94C9 /* SearchViewController.m in Sources */,
 				BAD3F3031B4C460700CA94C9 /* WelcomeViewController.m in Sources */,
+				BA0529411B66B74400718FEC /* LocationKeeper.m in Sources */,
+				BAC9F3401B6FE3E0007E1D3C /* LocationTableViewController.m in Sources */,
 				BAD5E55A1B4AECBD001B4E4F /* AppDelegate.m in Sources */,
 				BAB90D5E1B57066300A15014 /* CellLocationView.m in Sources */,
 				BA3571C41B5825260014D5BD /* LocationViewController.m in Sources */,
@@ -568,8 +588,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = /Users/HENRY/Desktop/Projects/Picky/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/HENRY/Desktop/Projects/Pickie/Frameworks,
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = FaveRestaurants/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.King-B.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Pickie;
@@ -585,9 +609,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = /Users/HENRY/Desktop/Projects/Picky/Frameworks;
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/HENRY/Desktop/Projects/Picky/Frameworks;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/HENRY/Desktop/Projects/Pickie/Frameworks,
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/HENRY/Desktop/Projects/Pickie/Frameworks;
 				INFOPLIST_FILE = FaveRestaurants/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.King-B.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Pickie;

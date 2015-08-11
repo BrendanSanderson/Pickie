@@ -1,3 +1,11 @@
+//
+//  MapPoint.m
+//  Pickie
+//
+//  Created by Brendan Sanderson on 7/6/15.
+//  Copyright (c) 2015 Brendan Sanderson. All rights reserved.
+//
+
 #import "MapPoint.h"
 
 @implementation MapPoint
@@ -9,6 +17,7 @@
 @synthesize description = _description;
 @synthesize pictureURL = _pictureURL;
 @synthesize placeID = _placeID;
+@synthesize searchName = _searchName;
 
 -(id)initWithName:(NSString*)name address:(NSString*)address coordinate:(CLLocationCoordinate2D)coordinate  {
     if ((self = [super init])) {

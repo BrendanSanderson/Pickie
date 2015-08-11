@@ -1,9 +1,9 @@
 //
-//  UIViewController+WelcomeViewController.m
-//  FaveRestaurants
+//  WelcomeViewController.m
+//  Pickie
 //
-//  Created by Henry Sanderson on 7/7/15.
-//  Copyright (c) 2015 King_B. All rights reserved.
+//  Created by Brendan Sanderson on 7/6/15.
+//  Copyright (c) 2015 Brendan Sanderson. All rights reserved.
 //
 
 #import "WelcomeViewController.h"
@@ -15,7 +15,7 @@
 -(void) viewDidLoad
 {
 //    self.view.backgroundColor = [[UIColor alloc]initWithRed:101.0/255.0 green:132.0/255.0 blue:158.0/255.0 alpha:1.0];
-    self.view.backgroundColor = [[UIColor alloc]initWithRed:37.0/255.0 green:62.0/255.0 blue:102.0/255.0 alpha:1.0];
+    self.view.backgroundColor = [[UIColor alloc]initWithRed:101.0/255.0 green:132.0/255.0 blue:158.0/255.0 alpha:1.0];
     startButton.layer.borderColor = [UIColor whiteColor].CGColor;
     
     
@@ -35,7 +35,7 @@
     [thisUser pinInBackground];
     
     
-    PFQuery *query = [PFQuery queryWithClassName:@"RestaurantsList"];
+    PFQuery *query = [PFQuery queryWithClassName:@"Restaurants"];
     [query setLimit: 1000];
     [query orderByDescending:@"count"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {

@@ -1,14 +1,15 @@
 //
-//  UITableViewController+SearchViewController.m
-//  FaveRestaurants
+//  SearchViewController.m
+//  Pickie
 //
-//  Created by Henry Sanderson on 7/8/15.
-//  Copyright (c) 2015 King_B. All rights reserved.
+//  Created by Brendan Sanderson on 7/6/15.
+//  Copyright (c) 2015 Brendan Sanderson. All rights reserved.
 //
 
 #import "SearchViewController.h"
 #import <Parse/Parse.h>
 #import <CoreFoundation/CoreFoundation.h>
+#import "LocationKeeper.h"
 
 
 @implementation SearchViewController
@@ -16,6 +17,7 @@
 NSMutableArray *restaurantList;
 NSString *userID;
 NSMutableArray *faves;
+NSString *searchText;
 - (void) viewDidLoad
 {
     [super viewDidLoad];
@@ -29,7 +31,6 @@ NSMutableArray *faves;
     self.searchController.searchBar.delegate = self;
     self.definesPresentationContext = YES;
     searchResults = [[NSMutableArray alloc] init];
-    faves = [FavoritesViewController getFavorites];
     self.tableView.backgroundColor = [[UIColor alloc]initWithRed:227.0/255.0 green:223/255.0 blue:215/255.0 alpha:1.0];
     restaurantList = [[NSMutableArray alloc] init];
     [self updateRestaurants];
@@ -75,46 +76,47 @@ NSMutableArray *faves;
  - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
                 [searchBar resignFirstResponder];
  }
-     
+
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
-         // update the filtered array based on the search text
-         NSString *searchText = searchController.searchBar.text;
-         searchResults = [restaurantList mutableCopy];
-         
-         // strip out all the leading and trailing spaces
-         NSString *strippedString = [searchText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-         
-         // break up the search terms (separated by spaces)
-         NSArray *searchItems = nil;
-         if (strippedString.length > 0) {
-             searchItems = [strippedString componentsSeparatedByString:@" "];
-         }
-         
-         NSMutableArray *andMatchPredicates = [NSMutableArray array];
-         
-         for (NSString *searchString in searchItems) {
-             NSExpression *lhs = [NSExpression expressionForKeyPath:@"name"];
-             NSExpression *rhs = [NSExpression expressionForConstantValue:searchString];
-             NSPredicate *finalPredicate = [NSComparisonPredicate
-                                            predicateWithLeftExpression:lhs
-                                            rightExpression:rhs
-                                            modifier:NSDirectPredicateModifier
-                                            type:NSContainsPredicateOperatorType
-                                            options:NSCaseInsensitivePredicateOption];
-             [andMatchPredicates addObject:finalPredicate];
-         }
+    // update the filtered array based on the search text
+    searchText = searchController.searchBar.text;
+    searchResults = [restaurantList mutableCopy];
     
-         NSCompoundPredicate *finalCompoundPredicate =
-        [NSCompoundPredicate andPredicateWithSubpredicates:andMatchPredicates];
-        searchResults = (NSMutableArray*)[searchResults filteredArrayUsingPredicate:finalCompoundPredicate];
-        [self.tableView reloadData];
+    // strip out all the leading and trailing spaces
+    NSString *strippedString = [searchText stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    
+    // break up the search terms (separated by spaces)
+    NSArray *searchItems = nil;
+    if (strippedString.length > 0) {
+        searchItems = [strippedString componentsSeparatedByString:@" "];
+    }
+    
+    NSMutableArray *andMatchPredicates = [NSMutableArray array];
+    
+    for (NSString *searchString in searchItems) {
+        NSExpression *lhs = [NSExpression expressionForKeyPath:@"name"];
+        NSExpression *rhs = [NSExpression expressionForConstantValue:searchString];
+        NSPredicate *finalPredicate = [NSComparisonPredicate
+                                       predicateWithLeftExpression:lhs
+                                       rightExpression:rhs
+                                       modifier:NSDirectPredicateModifier
+                                       type:NSContainsPredicateOperatorType
+                                       options:NSCaseInsensitivePredicateOption];
+        [andMatchPredicates addObject:finalPredicate];
+    }
+    
+    NSCompoundPredicate *finalCompoundPredicate =
+    [NSCompoundPredicate andPredicateWithSubpredicates:andMatchPredicates];
+    searchResults = (NSMutableArray*)[searchResults filteredArrayUsingPredicate:finalCompoundPredicate];
+    [self.tableView reloadData];
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (self.searchController.active)
     {
-        return [searchResults count];
+        return [searchResults count] + 1;
     }
     else
     {
@@ -138,7 +140,18 @@ NSMutableArray *faves;
     PFObject *rest;
     if (self.searchController.active)
     {
+        if (indexPath.row == [searchResults count])
+        {
+            cell.backgroundColor = [[UIColor alloc]initWithRed:227.0/255.0 green:223/255.0 blue:215/255.0 alpha:1.0];
+            cell.textLabel.text = [NSString stringWithFormat:@"add '%@'", searchText];
+            cell.imageView.image = nil;
+            return cell;
+        }
+        else
+        {
         rest = [searchResults objectAtIndex:indexPath.row];
+        }
+        
     }
     else
     {
@@ -155,12 +168,19 @@ NSMutableArray *faves;
     static NSString *cellIdentifier = @"CellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     cell = [tableView cellForRowAtIndexPath:indexPath];
-    PFObject * favorite = [PFObject objectWithClassName:@"Favorites"];
-    favorite[@"restaurantName"] = cell.textLabel.text;
-    BOOL alreadyAdded = false;
-    for (int i = 0; i<faves.count;i++)
+    PFObject *favorite = [PFObject objectWithClassName:@"Favorites"];
+    if (self.searchController.active && indexPath.row == [searchResults count])
     {
-        PFObject *object = [faves objectAtIndex:i];
+        favorite[@"restaurantName"] = [cell.textLabel.text substringWithRange:NSMakeRange(5, [cell.textLabel.text length]-6)];
+    }
+    else
+    {
+    favorite[@"restaurantName"] = cell.textLabel.text;
+    }
+    BOOL alreadyAdded = false;
+    for (int i = 0; i<[LocationKeeper sharedInstance].favorites.count;i++)
+    {
+        PFObject *object = [[LocationKeeper sharedInstance].favorites objectAtIndex:i];
         if ([object[@"restaurantName"] isEqualToString:favorite[@"restaurantName"]])
             {
                 alreadyAdded = true;
@@ -173,12 +193,15 @@ NSMutableArray *faves;
         favorite[@"UserID"] = [prefs stringForKey:@"userID"];
         [favorite saveInBackground];
         [favorite pin];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"updateFavorites" object:self];
+        
     }
     
     UIStoryboard *mainstoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UIViewController *loginvc=[mainstoryboard instantiateViewControllerWithIdentifier:@"MainTabBarController"];
     [self presentViewController:loginvc animated:NO completion:nil];
 }
+
 
 
 
@@ -231,7 +254,5 @@ NSString *const SearchBarIsFirstResponderKey = @"SearchBarIsFirstResponderKey";
     // restore the text in the search field
     self.searchController.searchBar.text = [coder decodeObjectForKey:SearchBarTextKey];
 }
-
-
 
 @end

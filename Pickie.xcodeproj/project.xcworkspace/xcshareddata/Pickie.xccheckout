@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5CD6E02E-D15D-4422-9F06-49026AF40AD2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Pickie</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3691CC25EB4392691170B9E6959F5FBF16AB737B</key>
+		<string>https://github.com/BrendanSanderson/Pickie.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Pickie.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3691CC25EB4392691170B9E6959F5FBF16AB737B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BrendanSanderson/Pickie.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3691CC25EB4392691170B9E6959F5FBF16AB737B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3691CC25EB4392691170B9E6959F5FBF16AB737B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pickie</string>
+		</dict>
+	</array>
+</dict>
+</plist>

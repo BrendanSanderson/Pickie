@@ -1,3 +1,11 @@
+//
+//  MapPoint.h
+//  Pickie
+//
+//  Created by Brendan Sanderson on 7/6/15.
+//  Copyright (c) 2015 Brendan Sanderson. All rights reserved.
+//
+
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
@@ -18,6 +26,7 @@
 @property NSString *direction;
 @property NSURL *pictureURL;
 @property NSString *placeID;
+@property NSString *searchName;
 
 - (id)initWithName:(NSString*)name address:(NSString*)address coordinate:(CLLocationCoordinate2D)coordinate;
 

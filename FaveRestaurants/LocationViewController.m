@@ -1,17 +1,9 @@
 //
-//  UIViewController+LocationViewController.m
-//  FaveRestaurants
+//  LocationViewController.m
+//  Pickie
 //
-//  Created by Henry Sanderson on 7/16/15.
-//  Copyright (c) 2015 King_B. All rights reserved.
-//
-
-//
-//  UIViewController+ProductViewController.m
-//  Soup
-//
-//  Created by Henry Sanderson on 7/10/15.
-//  Copyright (c) 2015 Brendan. All rights reserved.
+//  Created by Brendan Sanderson on 7/6/15.
+//  Copyright (c) 2015 Brendan Sanderson. All rights reserved.
 //
 
 #import "LocationViewController.h"
@@ -27,8 +19,9 @@
 @synthesize location, addressLabel, distanceLabel, mapView, directionButton, coverImage, titleLabel, numberLabel, websiteLabel;
 UIImageView *loadingImage;
 - (void)viewDidLoad {
+    self.navigationItem.title = @"Loading...";
     loadingImage = [[UIImageView alloc] initWithFrame:self.view.frame];
-    loadingImage.backgroundColor = [[UIColor alloc]initWithRed:101.0/255.0 green:132.0/255.0 blue:158.0/255.0 alpha:1.0];
+    loadingImage.backgroundColor = [[UIColor alloc]initWithRed:141.0/255.0 green:158.0/255.0 blue:189.0/255.0 alpha:1.0];
     [self.view addSubview:loadingImage];
     UITapGestureRecognizer *call = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(call)];
     [numberLabel addGestureRecognizer:call];
@@ -123,9 +116,9 @@ UIImageView *loadingImage;
 }
 
 - (IBAction)getDirections:(id)sender {
-    NSString *urlString = [[NSString alloc] initWithFormat:@"http://maps.apple.com/?q=%.5f,%.5f",
-                           location.coordinate.latitude, location.coordinate.longitude];
-    NSURL* url = [NSURL URLWithString:urlString];
-    [[UIApplication sharedApplication] openURL:url];
+//    NSString *urlString = [[NSString alloc] initWithFormat:@"http://maps.apple.com/?q=%.5f,%.5f",
+//                           location.coordinate.latitude, location.coordinate.longitude];
+    NSString* url = [NSString stringWithFormat: @"http://maps.apple.com/maps?saddr=Current+Location&daddr=%f,%f", location.coordinate.latitude, location.coordinate.longitude];
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: url]];
 }
 @end

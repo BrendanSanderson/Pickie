@@ -1,9 +1,9 @@
 //
-//  UITableViewController+SearchViewController.h
-//  FaveRestaurants
+//  SearchViewController.h
+//  Pickie
 //
-//  Created by Henry Sanderson on 7/8/15.
-//  Copyright (c) 2015 King_B. All rights reserved.
+//  Created by Brendan Sanderson on 7/6/15.
+//  Copyright (c) 2015 Brendan Sanderson. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
